@@ -1,0 +1,21 @@
+{
+    "basepath": "/api",
+    "routers": [
+        {
+            "name": "ping",
+            "routes": {
+                "prefix":  "/ping"
+            },
+            "options": {},
+            "active": true
+        },
+        {
+            "name": "review",
+            "routes": {
+                "prefix":  "/reviews"
+            },
+            "options": {},
+            "active": true
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "product-review-service",
+  "version": "1.0.0",
+  "description": "Alexa Review REST API Service",
+  "main": "src/app/server.js",
+  "scripts": {
+    "start": "nodemon ./src/app/start --watch",
+    "test": "lab -v ./src/"
+  },
+  "keywords": [
+    "Nodejs",
+    "Hapijs Framework",
+    "Unit Testing",
+    "REST API",
+    "HAPI Lab"
+  ],
+  "author": "Katturaja Mookkan",
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^16.7.0",
+    "hapi-swagger": "^7.10.0",
+    "inert": "^4.2.1",
+    "joi": "^14.3.1",
+    "joi-date-extensions": "^1.2.0",
+    "sinon": "^4.5.0",
+    "vision": "^4.1.1"
+  },
+  "devDependencies": {
+    "@hapi/code": "^8.0.7",
+    "@hapi/lab": "^24.5.1",
+    "nodemon": "^2.0.15"
+  }
+}

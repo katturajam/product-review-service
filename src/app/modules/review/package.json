@@ -1,0 +1,5 @@
+{
+    "name": "review",
+    "version": "1.0.0",
+    "main": "review-router.js"
+}
