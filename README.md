@@ -24,3 +24,7 @@ http://localhost:3000/alexa
 http://localhost:3000/alexa/docs
 ```
 
+### <u>Code coverage report will be generated in html format after running of unittest</u>
+```
+HTML report found in the service main directory under the directory reports
+```
