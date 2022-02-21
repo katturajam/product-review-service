@@ -9,7 +9,7 @@ const { SinonHelper } = require('../helper/sinonHelper');
 
 experiment('Rating Statistics', { parallel: false }, () => {
 
-    describe('GET /alexa/reviews/ratings/stats', () => {
+    describe('GET /api/reviews/ratings/stats', () => {
         let server, dbMock;
         
         beforeEach(async () => {
@@ -31,42 +31,42 @@ experiment('Rating Statistics', { parallel: false }, () => {
                 rating: 1,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/0'
+                location: 'http://localhost:3000/api/reviews/0'
             }]);
             dbSecondCall.returns([{
                 id: 1,
                 rating: 2,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/1'
+                location: 'http://localhost:3000/api/reviews/1'
             }]);
             dbThirdCall.returns([{
                 id: 2,
                 rating: 3,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/2'
+                location: 'http://localhost:3000/api/reviews/2'
             }]);
             dbFourthCall.returns([{
                 id: 3,
                 rating: 4,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/3'
+                location: 'http://localhost:3000/api/reviews/3'
             }]);
             dbFifthCall.returns([{
                 id: 4,
                 rating: 5,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/4'
+                location: 'http://localhost:3000/api/reviews/4'
             },
             {
                 id: 5,
                 rating: 5,
                 review_source: 'GooglePlayStore',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/5'
+                location: 'http://localhost:3000/api/reviews/5'
             }]);
             const expectedResult = {
                 netReview: 6,
@@ -95,42 +95,42 @@ experiment('Rating Statistics', { parallel: false }, () => {
                 rating: 1,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/0'
+                location: 'http://localhost:3000/api/reviews/0'
             }]);
             dbSecondCall.returns([{
                 id: 1,
                 rating: 2,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/1'
+                location: 'http://localhost:3000/api/reviews/1'
             }]);
             dbThirdCall.returns([{
                 id: 2,
                 rating: 3,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/2'
+                location: 'http://localhost:3000/api/reviews/2'
             }]);
             dbFourthCall.returns([{
                 id: 3,
                 rating: 4,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/3'
+                location: 'http://localhost:3000/api/reviews/3'
             }]);
             dbFifthCall.returns([{
                 id: 4,
                 rating: 5,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/4'
+                location: 'http://localhost:3000/api/reviews/4'
             },
             {
                 id: 5,
                 rating: 5,
                 review_source: 'GooglePlayStore',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/5'
+                location: 'http://localhost:3000/api/reviews/5'
             }]);
             const expectedResult = {
                 netReview: 1,
@@ -153,42 +153,42 @@ experiment('Rating Statistics', { parallel: false }, () => {
                 rating: 1,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/0'
+                location: 'http://localhost:3000/api/reviews/0'
             }]);
             dbSecondCall.returns([{
                 id: 1,
                 rating: 2,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/1'
+                location: 'http://localhost:3000/api/reviews/1'
             }]);
             dbThirdCall.returns([{
                 id: 2,
                 rating: 3,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/2'
+                location: 'http://localhost:3000/api/reviews/2'
             }]);
             dbFourthCall.returns([{
                 id: 3,
                 rating: 4,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/3'
+                location: 'http://localhost:3000/api/reviews/3'
             }]);
             dbFifthCall.returns([{
                 id: 4,
                 rating: 5,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/4'
+                location: 'http://localhost:3000/api/reviews/4'
             },
             {
                 id: 5,
                 rating: 5,
                 review_source: 'GooglePlayStore',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/5'
+                location: 'http://localhost:3000/api/reviews/5'
             }]);
             const expectedResult = {
                 netReview: 5, 
@@ -217,42 +217,42 @@ experiment('Rating Statistics', { parallel: false }, () => {
                 rating: 1,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/0'
+                location: 'http://localhost:3000/api/reviews/0'
             }]);
             dbSecondCall.returns([{
                 id: 1,
                 rating: 2,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/1'
+                location: 'http://localhost:3000/api/reviews/1'
             }]);
             dbThirdCall.returns([{
                 id: 2,
                 rating: 3,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/2'
+                location: 'http://localhost:3000/api/reviews/2'
             }]);
             dbFourthCall.returns([{
                 id: 3,
                 rating: 4,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/3'
+                location: 'http://localhost:3000/api/reviews/3'
             }]);
             dbFifthCall.returns([{
                 id: 4,
                 rating: 5,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/4'
+                location: 'http://localhost:3000/api/reviews/4'
             },
             {
                 id: 5,
                 rating: 5,
                 review_source: 'GooglePlayStore',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/5'
+                location: 'http://localhost:3000/api/reviews/5'
             }]);
             const expectedResult = {
                 netReview: 5, 
@@ -281,42 +281,42 @@ experiment('Rating Statistics', { parallel: false }, () => {
                 rating: 1,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/0'
+                location: 'http://localhost:3000/api/reviews/0'
             }]);
             dbSecondCall.returns([{
                 id: 1,
                 rating: 2,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/1'
+                location: 'http://localhost:3000/api/reviews/1'
             }]);
             dbThirdCall.returns([{
                 id: 2,
                 rating: 3,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/2'
+                location: 'http://localhost:3000/api/reviews/2'
             }]);
             dbFourthCall.returns([{
                 id: 3,
                 rating: 4,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/3'
+                location: 'http://localhost:3000/api/reviews/3'
             }]);
             dbFifthCall.returns([{
                 id: 4,
                 rating: 5,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/4'
+                location: 'http://localhost:3000/api/reviews/4'
             },
             {
                 id: 5,
                 rating: 5,
                 review_source: 'GooglePlayStore',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/5'
+                location: 'http://localhost:3000/api/reviews/5'
             }]);
             const expectedResult = {
                 netReview: 5, 
@@ -345,42 +345,42 @@ experiment('Rating Statistics', { parallel: false }, () => {
                 rating: 1,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/0'
+                location: 'http://localhost:3000/api/reviews/0'
             }]);
             dbSecondCall.returns([{
                 id: 1,
                 rating: 2,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/1'
+                location: 'http://localhost:3000/api/reviews/1'
             }]);
             dbThirdCall.returns([{
                 id: 2,
                 rating: 3,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/2'
+                location: 'http://localhost:3000/api/reviews/2'
             }]);
             dbFourthCall.returns([{
                 id: 3,
                 rating: 4,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/3'
+                location: 'http://localhost:3000/api/reviews/3'
             }]);
             dbFifthCall.returns([{
                 id: 4,
                 rating: 5,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/4'
+                location: 'http://localhost:3000/api/reviews/4'
             },
             {
                 id: 5,
                 rating: 5,
                 review_source: 'GooglePlayStore',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/5'
+                location: 'http://localhost:3000/api/reviews/5'
             }]);
             const expectedResult = {
                 netReview: 1,

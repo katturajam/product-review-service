@@ -9,7 +9,7 @@ const { SinonHelper } = require('../helper/sinonHelper');
 
 experiment('Review', { parallel: false }, () => {
 
-    describe('GET /alexa/reviews', () => {
+    describe('GET /api/reviews', () => {
         let server, dbMock;
         
         beforeEach(async () => {
@@ -48,7 +48,7 @@ experiment('Review', { parallel: false }, () => {
                 rating: 1,
                 review_source: 'GooglePlayStore',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/0'
+                location: 'http://localhost:3000/api/reviews/0'
             }]);
             const expectedResult = {
                 totalResults: 1,
@@ -60,7 +60,7 @@ experiment('Review', { parallel: false }, () => {
                         rating: 1,
                         store: 'GooglePlayStore',
                         date: '2017-05-27T00:00:00.000Z',
-                        location: 'http://localhost:3000/alexa/reviews/0'
+                        location: 'http://localhost:3000/api/reviews/0'
                     }
                 ]
             };
@@ -79,7 +79,7 @@ experiment('Review', { parallel: false }, () => {
                 rating: 1,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/0'
+                location: 'http://localhost:3000/api/reviews/0'
             }]);
             const expectedResult = {
                 totalResults: 1,
@@ -91,7 +91,7 @@ experiment('Review', { parallel: false }, () => {
                         rating: 1,
                         store: 'iTunes',
                         date: '2017-05-27T00:00:00.000Z',
-                        location: 'http://localhost:3000/alexa/reviews/0'
+                        location: 'http://localhost:3000/api/reviews/0'
                     }
                 ]
             };
@@ -110,7 +110,7 @@ experiment('Review', { parallel: false }, () => {
                 rating: 1,
                 review_source: 'GooglePlayStore',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/0'
+                location: 'http://localhost:3000/api/reviews/0'
             }]);
 
             const expectedResult = {
@@ -134,14 +134,14 @@ experiment('Review', { parallel: false }, () => {
                 rating: 1,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/0'
+                location: 'http://localhost:3000/api/reviews/0'
             },
             {
                 id: 1,
                 rating: 1,
                 review_source: 'iTunes',
                 reviewed_date: '2022-01-15T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/1'
+                location: 'http://localhost:3000/api/reviews/1'
             }]);
             const expectedResult = {
                 totalResults: 1,
@@ -153,7 +153,7 @@ experiment('Review', { parallel: false }, () => {
                         rating: 1,
                         store: 'iTunes',
                         date: '2022-01-15T00:00:00.000Z',
-                        location: 'http://localhost:3000/alexa/reviews/1'
+                        location: 'http://localhost:3000/api/reviews/1'
                     }
                 ]
             };
@@ -172,21 +172,21 @@ experiment('Review', { parallel: false }, () => {
                 rating: 1,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/0'
+                location: 'http://localhost:3000/api/reviews/0'
             },
             {
                 id: 1,
                 rating: 1,
                 review_source: 'iTunes',
                 reviewed_date: '2022-01-15T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/1'
+                location: 'http://localhost:3000/api/reviews/1'
             },
             {
                 id: 2,
                 rating: 5,
                 review_source: 'iTunes',
                 reviewed_date: '2022-01-30T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/2'
+                location: 'http://localhost:3000/api/reviews/2'
             }]);
             const expectedResult = {
                 totalResults: 1,
@@ -198,7 +198,7 @@ experiment('Review', { parallel: false }, () => {
                         rating: 5,
                         store: 'iTunes',
                         date: '2022-01-30T00:00:00.000Z',
-                        location: 'http://localhost:3000/alexa/reviews/2'
+                        location: 'http://localhost:3000/api/reviews/2'
                     }
                 ]
             };
@@ -217,21 +217,21 @@ experiment('Review', { parallel: false }, () => {
                 rating: 1,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/0'
+                location: 'http://localhost:3000/api/reviews/0'
             },
             {
                 id: 1,
                 rating: 1,
                 review_source: 'iTunes',
                 reviewed_date: '2022-01-15T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/1'
+                location: 'http://localhost:3000/api/reviews/1'
             },
             {
                 id: 2,
                 rating: 5,
                 review_source: 'iTunes',
                 reviewed_date: '2022-01-30T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/2'
+                location: 'http://localhost:3000/api/reviews/2'
             }]);
             const expectedResult = {
                 totalResults: 0,
@@ -254,21 +254,21 @@ experiment('Review', { parallel: false }, () => {
                 rating: 1,
                 review_source: 'iTunes',
                 reviewed_date: '2017-05-27T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/0'
+                location: 'http://localhost:3000/api/reviews/0'
             },
             {
                 id: 1,
                 rating: 1,
                 review_source: 'iTunes',
                 reviewed_date: '2022-01-15T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/1'
+                location: 'http://localhost:3000/api/reviews/1'
             },
             {
                 id: 2,
                 rating: 5,
                 review_source: 'iTunes',
                 reviewed_date: '2022-01-30T00:00:00.000Z',
-                location: 'http://localhost:3000/alexa/reviews/2'
+                location: 'http://localhost:3000/api/reviews/2'
             }]);
             const expectedResult = {
                 totalResults: 0,

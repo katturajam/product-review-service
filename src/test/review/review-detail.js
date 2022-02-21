@@ -9,7 +9,7 @@ const { SinonHelper } = require('../helper/sinonHelper');
 
 experiment('Review', { parallel: false }, () => {
 
-    describe('GET /alexa/reviews/{review_id}', () => {
+    describe('GET /api/reviews/{review_id}', () => {
         let server, dbMock;
         
         beforeEach(async () => {

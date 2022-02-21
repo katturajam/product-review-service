@@ -7,7 +7,7 @@ const { basepath } = require('../../app/modules.config.json');
 
 experiment('Ping', { parallel: false }, () => {
 
-    describe('GET /alexa/ping', () => {
+    describe('GET /api/ping', () => {
         let server;
 
         beforeEach(async () => {
