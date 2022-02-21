@@ -16,12 +16,12 @@ npm start
 
 ### <u>Service running at</u>
 ```
-http://localhost:3000/alexa
+http://localhost:3000/api
 ```
 
 ### <u>Open API - Swagger docs with API Playground</u>
 ```
-http://localhost:3000/alexa/docs
+http://localhost:3000/api/docs
 ```
 
 ### <u>Code coverage report will be generated in html format after running of unittest</u>
